@@ -1,9 +1,11 @@
 @import url(reset.css);
 body {
-  display: flex;
-  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(5, 500px) 140px;
+  width: 100%;
 }
 
+/* Header(imagem/texto/botões) */
 .header-content {
   background-image: url(imagens/Header\ Background.png);
   background-repeat: no-repeat;
@@ -69,4 +71,35 @@ body {
   color: #ffffffd0;
   letter-spacing: 0.5px;
   font-size: 15px;
+}
+/* Main section-1 */
+
+.section-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.section-1-img img {
+  display: block;
+  width: 610px;
+  height: 394px;
+  margin-left: 20%;
+}
+
+.section-1-text {
+  flex-direction: column;
+  width: 350px;
+  margin-left: 10%;
+}
+
+.section-1-text h1 {
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+.section-1-text p {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
